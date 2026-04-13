@@ -23,7 +23,7 @@ namespace RogaliqueGame
 		factories.emplace(BlockType::Unbreackable, std::make_unique<UnbreackableBlockFactory>());
 
 		// Init background
-		background.setSize(sf::Vector2f(SETTINGS.SCREEN_WIDTH, SETTINGS.SCREEN_HEIGHT));
+		background.setSize(sf::Vector2f((float)SETTINGS.SCREEN_WIDTH, (float)SETTINGS.SCREEN_HEIGHT));
 		background.setPosition(0.f, 0.f);
 		background.setFillColor(sf::Color(0, 0, 0));
 
