@@ -21,7 +21,7 @@ namespace RogaliqueGame
 		auto gameObject = std::dynamic_pointer_cast<GameObject>(collidableObject);
 		assert(gameObject);
 		sf::Rect rect = gameObject->GetRect();
-		rect.width *= 1.1f;
+		rect.width *= 1.1;
 		return GetRect().intersects(gameObject->GetRect());
 	}
 
