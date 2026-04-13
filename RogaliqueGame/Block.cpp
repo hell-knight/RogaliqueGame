@@ -12,7 +12,7 @@ namespace
 namespace RogaliqueGame
 {
 	Block::Block(const sf::Vector2f& position, const sf::Color& color)
-		: GameObject(SETTINGS.TEXTURES_PATH + TEXTURE_ID + ".png", position, SETTINGS.BLOCK_WIDTH, SETTINGS.BLOCK_HEIGHT)
+		: GameObject(SETTINGS.TEXTURES_PATH + TEXTURE_ID + ".png", position, (float)SETTINGS.BLOCK_WIDTH, (float)SETTINGS.BLOCK_HEIGHT)
 	{
 		sprite.setColor(color);
 	}
@@ -21,7 +21,7 @@ namespace RogaliqueGame
 		auto gameObject = std::dynamic_pointer_cast<GameObject>(collidableObject);
 		assert(gameObject);
 		sf::Rect rect = gameObject->GetRect();
-		rect.width *= 1.1;
+		rect.width *= 1.1f;
 		return GetRect().intersects(gameObject->GetRect());
 	}
 
@@ -86,7 +86,7 @@ namespace RogaliqueGame
 
 	void SmoothDestroyableBlock::EachTickAction(float deltaTime)
 	{
-		color.a = 255 * currentTime_ / destroyTime_;
+		color.a = (sf::Uint8)(255 * currentTime_ / destroyTime_);
 		sprite.setColor(color);
 	}
 
