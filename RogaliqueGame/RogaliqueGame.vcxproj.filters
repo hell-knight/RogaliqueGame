@@ -84,7 +84,6 @@
     <ClInclude Include="GameStateRecords.h">
       <Filter>Sources</Filter>
     </ClInclude>
-    <ClInclude Include="Vector.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="Application.h" />
@@ -106,5 +105,6 @@
       <Filter>Sources</Filter>
     </ClInclude>
     <ClInclude Include="Bonus.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
 </Project>
