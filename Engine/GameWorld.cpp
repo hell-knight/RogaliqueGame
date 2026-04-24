@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "GameWorld.h"
 
-namespace Engine
+namespace MyEngine
 {
 	GameWorld* GameWorld::Instance()
 	{
@@ -27,7 +27,7 @@ namespace Engine
 
 	void GameWorld::LateUpdate()
 	{
-		for (int i = markedToDestroyGameObjects.size() - 1; i >= 0; i--)
+		for (int i = (int)markedToDestroyGameObjects.size() - 1; i >= 0; i--)
 		{
 			DestroyGameObjectImmediate(markedToDestroyGameObjects[i]);
 		}
@@ -47,7 +47,7 @@ namespace Engine
 
 	void GameWorld::Clear()
 	{
-		for (int i = gameObjects.size() - 1; i >= 0; i--)
+		for (int i = (int)gameObjects.size() - 1; i >= 0; i--)
 		{
 			DestroyGameObjectImmediate(gameObjects[i]);
 		}

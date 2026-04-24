@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "ResourceSystem.h"
 
-namespace Engine
+namespace MyEngine
 {
 	ResourceSystem* ResourceSystem::Instance()
 	{
@@ -103,7 +103,7 @@ namespace Engine
 	{
 		auto textureMap = textureMaps.find(name);
 		auto textures = textureMap->second;
-		return textures.size();
+		return (int)textures.size();
 	}
 
 	void ResourceSystem::DeleteSharedTextureMap(const std::string& name)

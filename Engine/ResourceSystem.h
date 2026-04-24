@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 
-namespace Engine
+namespace MyEngine
 {
 	class ResourceSystem
 	{

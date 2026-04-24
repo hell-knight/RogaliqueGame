@@ -4,7 +4,7 @@
 #include "Scene.h"
 #include "Player.h"
 
-using namespace Engine;
+using namespace MyEngine;
 
 namespace RogaliqueGame
 {
@@ -12,7 +12,7 @@ namespace RogaliqueGame
 	{
 	public:
 		void Start() override;
-		void Restart() ovrride;
+		void Restart() override;
 		void Stop() override;
 	private:
 		std::shared_ptr<Player> player;

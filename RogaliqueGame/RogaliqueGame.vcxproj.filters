@@ -58,6 +58,12 @@
     <ClCompile Include="Bonus.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DeveloperLevel.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -106,5 +112,7 @@
     </ClInclude>
     <ClInclude Include="Bonus.h" />
     <ClInclude Include="Vector.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="DeveloperLevel.h" />
   </ItemGroup>
 </Project>

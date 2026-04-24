@@ -3,7 +3,7 @@
 
 
 
-namespace Engine
+namespace MyEngine
 {
 	GameObject::GameObject()
 	{

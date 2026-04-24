@@ -1,8 +1,8 @@
 #pragma once
-#define NOMINMAX
+//#define NOMINMAX
 #include <SFML/Graphics.hpp>
 
-namespace Engine
+namespace MyEngine
 {
 	class Engine
 	{

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "TransformComponent.h"
 
-namespace Engine
+namespace MyEngine
 {
 	TransformComponent::TransformComponent(GameObject* gameObject)
 		: Component(gameObject)

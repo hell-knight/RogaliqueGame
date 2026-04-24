@@ -1,6 +1,6 @@
 #pragma once
 #include "CameraComponent.h"
-#include "GameWord.h"
+#include "GameWorld.h"
 #include "SpriteRendererComponent.h"
 #include "RenderSystem.h"
 #include "InputComponent.h"
@@ -12,8 +12,8 @@ namespace RogaliqueGame
 	{
 	public:
 		Player();
-		Engine::GameObject* GetGameObject();
+		MyEngine::GameObject* GetGameObject();
 	private:
-		Engine::GameObject* gameObject;
+		MyEngine::GameObject* gameObject;
 	};
 }

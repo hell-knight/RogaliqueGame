@@ -2,7 +2,7 @@
 #include "Component.h"
 #include <SFML/Window.hpp> 
 
-namespace Engine
+namespace MyEngine
 {
 	class InputComponent : public Component
 	{

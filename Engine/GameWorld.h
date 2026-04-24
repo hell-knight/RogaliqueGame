@@ -1,7 +1,7 @@
 #pragma once
 #include "GameObject.h"
 
-namespace Engine
+namespace MyEngine
 {
 	class GameWorld
 	{

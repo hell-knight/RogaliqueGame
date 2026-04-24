@@ -2,7 +2,7 @@
 #include "Sprite.h"
 
 
-namespace Engine
+namespace MyEngine
 {
 	void InitSprite(sf::Sprite& sprite, float desiredWidth, float desiredHeight, const sf::Texture& texture)
 	{

@@ -2,7 +2,7 @@
 #include "TransformComponent.h"
 #include <iostream>
 
-namespace Engine
+namespace MyEngine
 {
 	class TransformComponent;
 

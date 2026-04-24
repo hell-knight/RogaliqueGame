@@ -3,7 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-namespace Engine
+namespace MyEngine
 {
 	class SpriteRendererComponent : public Component
 	{

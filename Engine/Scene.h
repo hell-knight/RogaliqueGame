@@ -1,6 +1,6 @@
 #pragma once
 
-namespace XYZEngine
+namespace MyEngine
 {
 	class Scene
 	{

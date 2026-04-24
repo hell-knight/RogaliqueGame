@@ -3,7 +3,7 @@
 #include "TransformComponent.h"
 #include "RenderSystem.h"
 
-namespace Engine
+namespace MyEngine
 {
 	SpriteRendererComponent::SpriteRendererComponent(GameObject* gameObject)
 		: Component(gameObject)
