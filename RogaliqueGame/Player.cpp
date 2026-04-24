@@ -1,11 +1,12 @@
 #include "Player.h"
 #include <ResourceSystem.h>
+#include "SpriteColliderComponent.h"
 
 namespace RogaliqueGame
 {
 	Player::Player()
 	{
-		gameObject = MyEngine::GameWorld::Instance()->CreateGameObject();
+		gameObject = MyEngine::GameWorld::Instance()->CreateGameObject("Player");
 		auto playerRenderer = gameObject->AddComponent<MyEngine::SpriteRendererComponent>();
 
 		playerRenderer->SetTexture(*MyEngine::ResourceSystem::Instance()->GetTextureShared("ball"));
@@ -16,6 +17,10 @@ namespace RogaliqueGame
 		playerCamera->SetBaseResolution(1280, 720);
 
 		auto playerInput = gameObject->AddComponent<MyEngine::InputComponent>();
+
+		auto transform = gameObject->GetComponent<MyEngine::TransformComponent>();
+
+		auto collider = gameObject->AddComponent<MyEngine::SpriteColliderComponent>();
 	}
 
 	MyEngine::GameObject* Player::GetGameObject()

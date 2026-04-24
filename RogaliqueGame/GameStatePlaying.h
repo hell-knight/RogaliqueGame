@@ -2,12 +2,11 @@
 #include "SFML/Graphics.hpp"
 #include "SFML/Audio.hpp"
 #include "GameStateData.h"
-#include "Platform.h"
-#include "Ball.h"
 #include "LevelLoader.h"
-#include "BlockFactory.h"
 #include "IObserver.h"
 #include "Bonus.h"
+//
+#include "GameObject.h"
 
 #include <unordered_map>
 
